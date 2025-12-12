@@ -76,5 +76,5 @@
     dina-font
   ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }
