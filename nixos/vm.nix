@@ -15,10 +15,7 @@
   environment.systemPackages = with pkgs; [
     virt-manager
     virt-viewer
-    #spice spice-gtk
-    #spice-protocol
     virtio-win
-    #win-spice
     adwaita-icon-theme
     qemu_kvm
     dmidecode
@@ -27,14 +24,11 @@
     bottles
   ];
 
-  # Manage the virtualisation services
   virtualisation = {
     libvirtd = {
       enable = true;
       qemu = {
         swtpm.enable = true;
-        #ovmf.enable = true;
-        #ovmf.packages = [ pkgs.OVMFFull.fd ];
       };
     };
     spiceUSBRedirection.enable = true;
