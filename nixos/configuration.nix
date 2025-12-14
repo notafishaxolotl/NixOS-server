@@ -7,6 +7,8 @@
     ./drives.nix
     ./unstable.nix
     ./zsh.nix
+    ./games/mc.nix
+    ./media/plex.nix
   ];
 
   # Hostname for this system
