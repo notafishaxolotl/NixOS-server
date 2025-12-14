@@ -1,19 +1,13 @@
 {
 
-  description = "the one to start 'em all";
+  description = "Just a bit of extra flavour";
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-25.11";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-
-    zen-browser = {
-      url = "github:0xc000022070/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs-unstable";
-    };
   };
-  outputs = { self, nixpkgs, home-manager, nixpkgs-unstable, spicetify-nix, zen-browser, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nixpkgs-unstable, ... }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
