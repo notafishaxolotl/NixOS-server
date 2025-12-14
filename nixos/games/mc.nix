@@ -4,7 +4,7 @@
   services.minecraft-server = {
   enable = true;
   eula = true;
-  openFirewall = true; # Opens the port the server is running on (by default 25565 but in this case 43000)
+  openFirewall = true; 
   declarative = true;
   whitelist = {
     # Use https://mcuuid.net/ to get a Minecraft UUID for a username
