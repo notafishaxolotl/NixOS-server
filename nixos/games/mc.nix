@@ -7,7 +7,7 @@
   openFirewall = true; # Opens the port the server is running on (by default 25565 but in this case 43000)
   declarative = true;
   whitelist = {
-    # This is a mapping from Minecraft usernames to UUIDs. You can use https://mcuuid.net/ to get a Minecraft UUID for a username
+    # Use https://mcuuid.net/ to get a Minecraft UUID for a username
     xr_lynx = "b55d65b2-3aea-4a29-968c-0a405b5a9d26";
   };
   serverProperties = {
