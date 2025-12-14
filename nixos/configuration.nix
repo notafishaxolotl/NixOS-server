@@ -8,7 +8,7 @@
     ./unstable.nix
     ./zsh.nix
     ./games/mc.nix
-    ./media/plex.nix
+    ./media/jelly.nix
   ];
 
   # Hostname for this system
