@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-unstable.url = "nixpkgs/nixos-unstable";
+    nix-minecraft.url = "github:Infinidoge/nix-minecraft";
   };
   outputs = { self, nixpkgs, home-manager, nixpkgs-unstable, ... }@inputs:
     let
