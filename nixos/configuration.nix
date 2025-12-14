@@ -44,6 +44,13 @@
   services.udisks2.enable = true;
   nixpkgs.config.allowUnfree = true;
 
+  users.users.wuluh = {
+    isNormalUser = true;
+    description = "Wuluh";
+    extraGroups = [ "networkmanager" "wheel" "dialout" ]; # Network admin and sudo
+    packages = with pkgs; [];
+  };
+
   # Experimental Nix features
   nix.settings.experimental-features = [
     "nix-command"
