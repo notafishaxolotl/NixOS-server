@@ -8,14 +8,25 @@
     inputs.nix-minecraft.overlay
   ];
 
+  eula = true;
+  enable = true;
   services.minecraft-server = {
   enable = true;
   eula = true;
-  openFirewall = true; 
+  openFirewall = true;
   declarative = true;
-  whitelist = {
+  
+  servers.WuluH.whitelist = {
+  xr_lynx = "b55d65b2-3aea-4a29-968c-0a405b5a9d26";
+  };
+  
+  servers.WuluH.operators = {
     # Use https://mcuuid.net/ to get a Minecraft UUID for a username
-    xr_lynx = "b55d65b2-3aea-4a29-968c-0a405b5a9d26";
+    xr_lynx = {
+      "b55d65b2-3aea-4a29-968c-0a405b5a9d26";
+      level = 4;
+      bypassesPlayerLimit = true;
+    };
   };
   serverProperties = {
     server-port = 43000;
