@@ -2,5 +2,6 @@
 
 ___
 
-- ### add Tailscale ttyd and Homepage for gui management
+- ### add Tailscale ttyd and Homepage for gui management 
+- ## dont forget systemd boot this time
 
