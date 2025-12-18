@@ -27,9 +27,9 @@
       };
     };
     homeConfigurations = {
-        acito = home-manager.lib.homeManagerConfiguration {
+        wuluh = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          extraSpecialArgs = { inherit inputs; };  # ADD THIS LINE
+          extraSpecialArgs = { inherit inputs; };  
           modules = [ 
             ./home.nix
             spicetify-nix.homeManagerModules.default
