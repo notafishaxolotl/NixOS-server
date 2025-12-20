@@ -4,5 +4,5 @@ ___
 
 - ### add Tailscale ttyd and Homepage for gui management 
 - ## dont forget systemd boot this time
-- ### update 'vm.nix' so its actually optimised for server use and not Desktop use
+- ### update `vm.nix` so its actually optimised for server use and not Desktop use
 
