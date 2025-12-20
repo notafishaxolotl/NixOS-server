@@ -13,6 +13,7 @@
 
    boot = {
     kernelPackages = pkgs.linuxPackages_zen;
+    kernelModules = [ "kvm-amd" ]; 
     loader = {
       efi.canTouchEfiVariables = true;
       systemd-boot.enable = true;
