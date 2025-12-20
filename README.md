@@ -5,6 +5,5 @@ ___
 - ### add `Tailscale` `ttyd` and `Homepage` for gui management 
 - ### update `vm.nix` so its actually optimised for server use and not Desktop use
 - ### double check `hardware acceleration`
-- ### add some `configs` for better tty use
 - ### tidy code
 - ### fix up `jellyphin.nix` and `mc.nix`
