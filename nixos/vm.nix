@@ -6,7 +6,7 @@
   programs.virt-manager.enable = true;
 
   # Add user to libvirtd group
-  users.users.acito.extraGroups = [
+  users.users.wuluh.extraGroups = [
     #"libvirtd"
     "waydroid"
   ];
